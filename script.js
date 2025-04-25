@@ -1,10 +1,11 @@
 let resposta = document.querySelector(".resposta");
 
 btn.onclick = function(){
+    let nome = document.querySelector("#nome").value;
     let a = altura.value;
     let p = peso.value;
     let calculo = p / (a * a);
-    resposta.innerText = `Seu IMC é: ${calculo}`;
+    resposta.innerText = `${nome} Seu IMC é: ${calculo}`;
     if(calculo <= 18.4){
         resposta.innerText += ' Abaixo do peso ';
         return;

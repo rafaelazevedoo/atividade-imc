@@ -29,7 +29,12 @@ btn.onclick = function(){
 
     }
 
-    resposta.innerText += ' Obesidade 3';
+    if(calculo <= 44.9){
+        resposta.innerText += ' Obesidade 3';
+        return;                
+    }
+
+    resposta.innerText += ' Obesidade Mórbida, procure um médico!';
 
 
     

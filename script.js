@@ -1,0 +1,38 @@
+let resposta = document.querySelector(".resposta");
+
+btn.onclick = function(){
+    let a = altura.value;
+    let p = peso.value;
+    let calculo = p / (a * a);
+    resposta.innerText = `Seu IMC é: ${calculo}`;
+    if(calculo <= 18.4){
+        resposta.innerText += ' Abaixo do peso ';
+        return;
+    }
+    if(calculo <= 24.9){
+        resposta.innerText += ' Peso ideal';
+        return;
+    }
+    if(calculo <= 29.9){
+        resposta.innerText += ' Excesso de peso';
+        return;
+
+    }
+    if(calculo <= 34.9){
+        resposta.innerText += ' Obesidade 1';
+        return;
+
+    }
+    if(calculo <= 39.9){
+        resposta.innerText += ' Obesidade 2';
+        return;
+
+    }
+
+    resposta.innerText += ' Obesidade 3';
+
+
+    
+}
+
+    

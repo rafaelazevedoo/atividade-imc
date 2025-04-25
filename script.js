@@ -30,11 +30,11 @@ btn.onclick = function(){
     }
 
     if(calculo <= 44.9){
-        resposta.innerText += ' Obesidade 3';
+        resposta.innerText += '  Luan atencão Obesidade 3, procure um médico!';
         return;                
     }
 
-    resposta.innerText += ' Obesidade Mórbida, procure um médico!';
+    resposta.innerText += ' Obesidade Mórbida, Luan procure um médico!';
 
 
     

@@ -5,7 +5,7 @@ btn.onclick = function(){
     let a = altura.value;
     let p = peso.value;
     let calculo = p / (a * a);
-    resposta.innerText = `${nome} Seu IMC é: ${calculo}`;
+    resposta.innerText = `${nome} Seu IMC é: ${calculo.toFixed(2)}`;
     if(calculo <= 18.4){
         resposta.innerText += ' Abaixo do peso ';
         return;
